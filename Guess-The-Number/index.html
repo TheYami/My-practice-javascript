@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number if you can</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="register" id="register">
+            <div class="whoareyou">
+                <form id="form">
+                    <h2>Tell me who are you?</h2>
+                    <input type="text" name="name" id="player" placeholder="กรุณาใส่ชื่อของคุณ">
+                    <button type="submit" class="start" id="start">Start</button>
+                </form>
+            </div>
+        </div>
+
+        <nav>
+            <div class="game-name">
+                <h2>Guess Number Game</h2>
+            </div>
+
+            <div class="nameshow" >
+                <h2 id="nameshow"></h2>
+            </div>
+
+            <div>
+                <h2>Can you guess this number?</h2>
+            </div>
+        </nav>
+
+        <section class="game">
+            <h2 id="overhead">This Number is?</h2>
+            <h3 id="result">XX</h3>
+
+            <form  class="guess-number" id="guess-number">
+                <input type="text" placeholder="Enter your guess number" id="form-guess">
+                <button type="submit">OK</button>
+            </form>
+
+            <div class="result">
+                <h2 id="list">
+                </h2>
+
+                <h2 id="scores"></h2>
+
+                <button type="button" id="reset" onclick="window.location.reload()" value="Refresh หน้าเว็บไซต์">เล่นอีกครั้ง</button>
+            </div>
+        </section>
+
+        
+    </main>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

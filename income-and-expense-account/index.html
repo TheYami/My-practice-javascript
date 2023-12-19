@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income and Expense Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Income and Expense Program</h2>
+    <div class="container">
+        <h4>Balance (Baht)</h4>
+        <h1 id="balance">฿0.00</h1>
+        <div class="income-expense-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-income" class="money plus"></p>
+            </div>
+            <div>
+                <h4>Expense</h4>
+                <p id="money-expense" class="money minus"></p>
+            </div>
+        </div>
+        <h3>Transaction history</h3>
+        <ul id="list" class="list"></ul>
+        <h3>Add Transaction</h3>
+        <form  id="form">
+            <div class="form-control">
+                <label for="text">List data</label>
+                <input type="text" name="" id="text">
+            </div>
+            <div class="form-control">
+                <label for="text">Amount</label>
+                <input type="number" name="" id="amount">
+            </div>
+            <button class="btn">
+                Add
+            </button>
+        </form>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

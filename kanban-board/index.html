@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanBan Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main__title">KanBan Board</h1>
+    <div class="drag__container">
+        <ul class="drag__list">
+            <!---------work1-------------------->
+            <li class="drag__column backlog__column">
+                <span class="header">
+                    <h1>Back-log</h1>
+                </span>
+                <div class="custom__scroll" id="backlog__content">
+                    <ul class="drag__item-list" id="backlog__list">
+                        <li class="drag__item" draggable="true">Coding</li>
+                        <li class="drag__item" draggable="true">Web writing</li>
+                        <li class="drag__item" draggable="true">upload work</li>
+                    </ul>
+                </div>
+            </li>
+         <!---------work2-------------------->
+            <li class="drag__column progess__column">
+                <span class="header">
+                    <h1>Progess</h1>
+                </span>
+                <div class="custom__scroll" id="progess__content">
+                    <ul class="drag__item-list" id="backlog__list">
+                        <li class="drag__item" draggable="true">ux/ui</li>
+                        <li class="drag__item" draggable="true">drawing</li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="drag__column complete__column">
+                <span class="header">
+                    <h1>Success</h1>
+                </span>
+                <div class="custom__scroll" id="complete__content">
+                    <ul class="drag__item-list" id="complete__list"></ul>
+                </div>
+            </li>
+
+            <li class="drag__column reject__column">
+                <span class="header">
+                    <h1>Fail</h1>
+                </span>
+                <div class="custom__scroll" id="reject__content">
+                    <ul class="drag__item-list" id="reject__list"></ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

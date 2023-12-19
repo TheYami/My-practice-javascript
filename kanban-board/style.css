@@ -1,0 +1,107 @@
+:root{
+    --catagory-1:#a2622d;
+    --catagory-2:#1b6161;
+    --catagory-3:#248224;
+    --catagory-4:#a22d22;
+}
+
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/13/15/29/coffee-2847957_1280.jpg');
+    background-size: cover;
+    background-position: 50% 60%;
+    background-attachment: fixed;
+    color: white;
+    overflow: hidden;
+}
+
+h1{
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.main__title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.drag__container{
+    margin: 20px;
+}
+
+.drag__list{
+    display: flex;
+    align-items: flex-start;
+}
+
+.drag__column{
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+li{
+    list-style-type: none;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.header h1{
+    font-size: 1.25rem;
+}
+
+.backlog__column .header{
+    background-color: var(--catagory-1);
+}
+
+.progess__column .header{
+    background-color: var(--catagory-2);
+}
+
+.complete__column .header{
+    background-color: var(--catagory-3);
+}
+
+.reject__column .header{
+    background-color: var(--catagory-4);
+}
+
+.custom__scroll{
+    overflow-y: auto;
+    max-height: 52vh;
+}
+
+.drag__item-list{
+    min-height: 50px;
+}
+
+.drag__item{
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
